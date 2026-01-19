@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Render Keep Alive</title>
+</head>
+<body>
+  <h3>Render Keep Alive Running</h3>
+
+  <script>
+    const url = "https://whisper-k84f.onrender.com/";
+
+    setInterval(() => {
+      fetch(url)
+        .then(() => console.log("Ping sent"))
+        .catch(() => console.log("Ping failed"));
+    }, 240000); // 4 minutes
+  </script>
+</body>
+</html>
